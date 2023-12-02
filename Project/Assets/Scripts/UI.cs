@@ -15,4 +15,9 @@ public class UI : MonoBehaviour
     {
         
     }
+
+    public void ActiveScene()
+    {
+        Time.timeScale = 1f;
+    }
 }
