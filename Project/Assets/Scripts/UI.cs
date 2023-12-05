@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,4 +22,13 @@ public class UI : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
+    public void CloseScene()
+    {
+        Time.timeScale = 0f;
+    }
+    public void load_Scene(string S)
+    {
+        SceneManager.LoadScene(S);
+    }
+
 }
