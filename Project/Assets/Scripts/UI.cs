@@ -30,5 +30,8 @@ public class UI : MonoBehaviour
     {
         SceneManager.LoadScene(S);
     }
-
+    public void Reset_Game()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
