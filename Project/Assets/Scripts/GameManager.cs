@@ -23,11 +23,10 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void SwitchScene()
+    public void SwitchScene(string S)
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene(S);
     }
-
     public void QuitGame()
     {
         Application.Quit();
